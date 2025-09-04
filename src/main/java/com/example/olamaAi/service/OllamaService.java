@@ -24,7 +24,7 @@ public class OllamaService {
 
     public String generateResponse(String prompt){
         Map<String , Object> request = new HashMap<>();
-        request.put("model", "deepseek-r1");
+        request.put("model", "deepseek-r1:latest");
         request.put("prompt", prompt);
         request.put("stream", false);
 
